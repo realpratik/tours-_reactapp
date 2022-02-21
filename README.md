@@ -1,1 +1,2 @@
-## React Projects Starter APP
+## React APP 
+#fetching data from API
