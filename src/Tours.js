@@ -2,16 +2,16 @@ import React from 'react';
 import Tour from './Tour';
 
 
-const Tours = ({props}) => {
+const Tours = ({props,removeTour}) => {
 
   return (
     <section>
       <div className="title">
-        <h2>Our cddTours</h2>
+        <h2> Australian Tours</h2>
         <div className="underline"> </div>
         <div>
           {props.map((tour)=> {
-            return <Tour key = {tour.id} {...tour} > </Tour>;  
+            return <Tour key = {tour.id} {...tour} removeTour={removeTour}> </Tour>;  
           })}
         </div>
       </div>
